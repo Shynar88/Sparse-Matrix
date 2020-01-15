@@ -30,7 +30,7 @@ Both are None if they do not exist."""
       q = p
       p = p.right
     if p is None or p.col == col:
-      return p, q     #p tot chto pravee  q tot chto levee    p eto nuzhnyi element 
+      return p, q      
     return None, q
 
   def _finduppernode(self, row, col):
@@ -59,7 +59,7 @@ q is the previous node on the same row, or None."""
     else:
       n.down = qc.down
       qc.down = n
-    if q == None:    #elif if diff??
+    if q == None:    
       if self._prow[row] == None:
         self._prow[row] = n
       else: 
